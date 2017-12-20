@@ -28,4 +28,11 @@ describe("A frame of bowling", function(){
     });
   });
 
+  describe('#_isSpare', function() {
+    it("returns the sum of the rolls", function(){
+      var frame = new Frame([9, 1]);
+      expect(frame._isSpare()).toEqual(true);
+    });
+  });
+
 });
