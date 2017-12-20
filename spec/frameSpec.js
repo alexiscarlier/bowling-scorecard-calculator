@@ -10,7 +10,14 @@ describe("A frame of bowling", function(){
   describe('#_rollScore', function() {
     it("returns the sum of the rolls", function(){
       var frame = new Frame([2, 4]);
-      expect(frame._rollScore()).toEqual(6)
+      expect(frame._rollScore()).toEqual(6);
+    });
+  });
+
+  describe('#_bonusScore', function() {
+    it("returns the sum of the rolls", function(){
+      var frame = new Frame([2, 4]);
+      expect(frame._bonusScore()).toEqual(0);
     });
   });
 
