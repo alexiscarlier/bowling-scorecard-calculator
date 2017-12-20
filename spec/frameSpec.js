@@ -21,4 +21,11 @@ describe("A frame of bowling", function(){
     });
   });
 
+  describe('#_isStrike', function() {
+    it("returns the sum of the rolls", function(){
+      var frame = new Frame([10, 0]);
+      expect(frame._isStrike()).toEqual(true);
+    });
+  });
+
 });
