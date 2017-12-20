@@ -35,4 +35,11 @@ describe("A frame of bowling", function(){
     });
   });
 
+  describe('#_firstRoll', function() {
+    it("returns the sum of the rolls", function(){
+      var frame = new Frame([9, 1]);
+      expect(frame._firstRoll()).toEqual(9);
+    });
+  });
+
 });
