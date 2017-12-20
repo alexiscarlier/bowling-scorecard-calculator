@@ -1,3 +1,5 @@
+const Frame = require('../lib/frame.js')
+
 describe("A frame of bowling", function(){
 
   describe('#total', function() {
@@ -39,6 +41,14 @@ describe("A frame of bowling", function(){
     it("returns the sum of the rolls", function(){
       var frame = new Frame([9, 1]);
       expect(frame._firstRoll()).toEqual(9);
+    });
+  });
+
+  describe('#_spareBonus', function() {
+    it("returns the sum of the rolls", function(){
+      var frame = new Frame([9, 1]);
+      var nextFrame = new Frame([9, 1]);
+      expect(nextFrame._spareBonus()).toEqual(9);
     });
   });
 

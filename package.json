@@ -1,0 +1,26 @@
+{
+  "name": "bowling-scorecard-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "nyc jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexiscarlier/bowling-scorecard-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexiscarlier/bowling-scorecard-calculator/issues"
+  },
+  "homepage": "https://github.com/alexiscarlier/bowling-scorecard-calculator#readme",
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "nyc": "^11.4.1"
+  }
+}
